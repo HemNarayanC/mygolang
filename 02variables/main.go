@@ -18,4 +18,13 @@ func main() {
 	var smallFloat float64 = 329.5454874316654545
 	fmt.Println(smallFloat)
 	fmt.Printf("Type of variable: %T\n", smallFloat)
+
+	//if declared but not assigned value then by default 0 is assigned
+	var anotherVariable int
+	fmt.Println(anotherVariable)
+	fmt.Printf("Type of variable: %T\n", anotherVariable)
+
+	var str string
+	fmt.Println(str)
+	fmt.Printf("Type of variable: %T\n", str)
 }
