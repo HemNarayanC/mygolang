@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+var jwtToken int = 3
+fmt.Printf("%T", jwtToken)
+
 func main() {
 	var username string = "I am learning golang"
 	fmt.Println(username) //Println doesn't support formatting like %T
@@ -19,6 +22,7 @@ func main() {
 	fmt.Println(smallFloat)
 	fmt.Printf("Type of variable: %T\n", smallFloat)
 
+	//default values and some alliases
 	//if declared but not assigned value then by default 0 is assigned
 	var anotherVariable int
 	fmt.Println(anotherVariable)
@@ -27,4 +31,14 @@ func main() {
 	var str string
 	fmt.Println(str)
 	fmt.Printf("Type of variable: %T\n", str)
+
+	//implicit type
+	//lexer here defines the variable type by itself
+	var website = "www.google.com"
+	fmt.Println(website)
+
+	//no var style
+	numberOfUser := 150 //walrun operator for declaration + assignment and is valid inside method only
+	fmt.Println(numberOfUser)
+
 }
