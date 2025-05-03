@@ -2,8 +2,7 @@ package main
 
 import "fmt"
 
-var jwtToken int = 3
-fmt.Printf("%T", jwtToken)
+const LoginId string = "HelloGoLang54"
 
 func main() {
 	var username string = "I am learning golang"
@@ -40,5 +39,8 @@ func main() {
 	//no var style
 	numberOfUser := 150 //walrun operator for declaration + assignment and is valid inside method only
 	fmt.Println(numberOfUser)
+
+	fmt.Printf("Type of variable is %T\n", LoginId)
+	fmt.Println(LoginId)
 
 }
