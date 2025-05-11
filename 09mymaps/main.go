@@ -18,6 +18,12 @@ func main() {
 	currencyCode["QAR"] = "Qatari Riyal"
 	fmt.Println(currencyCode)
 
+	//deleting the element
+	delete(currencyCode, "NPR")
+
+	fmt.Println(currencyCode)
+	fmt.Println(currencyCode["QAR"])
+
 	initialization()
 
 }
