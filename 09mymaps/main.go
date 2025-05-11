@@ -24,6 +24,18 @@ func main() {
 	fmt.Println(currencyCode)
 	fmt.Println(currencyCode["QAR"])
 
+	//key value pair using range
+	for key, value := range currencyCode {
+		fmt.Printf("%v = %v\n", key, value)
+	}
+
+	cyCode := "USD"
+	if currencyName, ok := currencyCode[cyCode]; ok {
+		fmt.Printf("%v\n", currencyName)
+	} else {
+		fmt.Println("Currency doesn't exist")
+	}
+
 	initialization()
 
 }
