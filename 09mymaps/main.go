@@ -18,4 +18,6 @@ func main() {
 	currencyCode["QAR"] = "Qatari Riyal"
 	fmt.Println(currencyCode)
 
+	initialization()
+
 }
