@@ -24,7 +24,7 @@ func main() {
 	fmt.Println(currencyCode)
 	fmt.Println(currencyCode["QAR"])
 
-	//key value pair using range
+	//key value pair using range to iterate over all elements in map
 	for key, value := range currencyCode {
 		fmt.Printf("%v = %v\n", key, value)
 	}
