@@ -52,4 +52,10 @@ func main() {
 	sort.Ints(lowScores)
 	fmt.Println(lowScores)
 
+	var bookList = []string{"Networking", "DotNet", "MIS", "IOM", "Computer_Graphics_&_Animation"}
+	fmt.Println(bookList)
+	var index int = 2
+	bookList = append(bookList[:index], bookList[index+1:]...)
+	fmt.Println(bookList)
+
 }
