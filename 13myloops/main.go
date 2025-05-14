@@ -22,4 +22,13 @@ func main() {
 	for _, day := range days {
 		fmt.Printf("day is %v\n", day)
 	}
+
+	rougueValue := 0
+	for rougueValue < 10 {
+		if rougueValue == 5 {
+			break
+		}
+		fmt.Println("Value is: ", rougueValue)
+		rougueValue++
+	}
 }
