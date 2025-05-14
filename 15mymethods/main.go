@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 	user1 := User{
@@ -39,7 +42,7 @@ type Rectangle struct {
 }
 
 func (c Circle) Area() float64 {
-	return 3.14 * c.Radius * c.Radius
+	return math.Pi * c.Radius * c.Radius
 }
 
 func (u User) NewMail() {
