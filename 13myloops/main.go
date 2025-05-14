@@ -25,10 +25,15 @@ func main() {
 
 	rougueValue := 0
 	for rougueValue < 10 {
-		if rougueValue == 5 {
-			break
+		if rougueValue == 2 {
+			goto newValue
+			// continue
+			// break
 		}
 		fmt.Println("Value is: ", rougueValue)
 		rougueValue++
 	}
+
+newValue:
+	fmt.Println("Value is: 1200")
 }
