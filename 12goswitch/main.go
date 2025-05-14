@@ -7,7 +7,10 @@ import (
 )
 
 func showFallThrough() {
-	level := 2 // 1 = Bronze, 2 = Silver, 3 = Gold
+	var level int
+	fmt.Println("Enter the level: ")
+	fmt.Scan(&level)
+	//level := 2 // 1 = Bronze, 2 = Silver, 3 = Gold
 
 	fmt.Print("Your benefits:\n")
 
