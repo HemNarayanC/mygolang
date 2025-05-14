@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
 func showFallThrough() {
 	level := 2 // 1 = Bronze, 2 = Silver, 3 = Gold
@@ -18,6 +22,32 @@ func showFallThrough() {
 		fmt.Println("- Free Checked Baggage")
 	default:
 		fmt.Println("No membership benefits")
+	}
+}
+
+func ludoGame() {
+	rand.Seed(time.Now().UnixNano())
+	diceNumber := rand.Intn(6) + 1
+	fmt.Printf("You rolled a %d\n", diceNumber)
+
+	switch diceNumber {
+	case 1:
+		fmt.Println("You can move 1 step")
+	case 2:
+		fmt.Println("You can move 2 steps")
+	case 3:
+		fmt.Println("You can move 3 steps")
+		// fallthrough is used to execute the next case even if the current case is matched
+		fallthrough
+	case 4:
+		fmt.Println("You can move 4 steps")
+		fallthrough
+	case 5:
+		fmt.Println("You can move 5 steps")
+	case 6:
+		fmt.Println("You can move 6 steps")
+	default:
+		fmt.Println("You can roll again")
 	}
 }
 
@@ -42,4 +72,5 @@ func main() {
 	}
 
 	showFallThrough()
+	ludoGame()
 }
