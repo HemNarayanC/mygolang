@@ -14,10 +14,24 @@ func checkEligibility(age int) {
 	}
 }
 
+func oddEven() {
+	var number int
+	fmt.Println("Enter a number: ")
+	fmt.Scan(&number)
+
+	if num := number; num%2 == 0 {
+		fmt.Println("Even")
+	} else {
+		fmt.Println("Odd")
+	}
+}
+
 func main() {
 	var age int
 	fmt.Println("Enter your age: ")
 	fmt.Scan(&age)
 
 	checkEligibility(age)
+
+	oddEven()
 }
