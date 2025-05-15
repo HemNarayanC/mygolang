@@ -3,12 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	defer fmt.Println("\nWorld")
+	//defer is executed in LIFO order
+	defer fmt.Println("World")
 	fmt.Println("Hello ")
 	myDefer()
 
 	a := 199
 	defer displayValue(a)
+	a = 100
+	fmt.Println("Value of a is: ", a)
 
 }
 
